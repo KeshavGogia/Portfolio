@@ -28,6 +28,9 @@ main {
 h1 {
   text-align: center;
 }
+h4 {
+  text-align: center;
+}
 
 p {
   color: grey;
@@ -86,4 +89,9 @@ textarea {
 }
 [type="submit"]:hover {
   background: #3586ff;
+}
+
+.f_connect{
+  text-align: center;
+  color: white;
 }

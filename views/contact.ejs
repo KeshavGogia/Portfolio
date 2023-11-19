@@ -1,9 +1,28 @@
+
 <%- include("partials/header.ejs") %>
+
 <h1>Contact Me</h1>
-<form>
-  <input name="name" type="text" class="feedback-input" placeholder="Name" />
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+<form onsubmit="sendEmail(); reset(); return false;">
+  <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" />
+  <input name="email" type="email" id="email" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" id="text" placeholder="Comment"></textarea>
   <input type="submit" value="SUBMIT" />
 </form>
-<%- include("partials/footer.ejs") %>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail() {
+    Email.send({
+      SecureToken: "7f52e3-e5db-4bfb-b9c3-bfad656e864e",
+
+      To: 'keshavwork510@gmail.com',
+      From: document.getElementById('email').value,
+      Subject: "New Form Entry",
+      Body: "Name : " + document.getElementById('name').value +
+              " <br> Email : " + document.getElementById('email').value +
+              "<br> Message : " + document.getElementById('text').value
+    }).then(
+            message => alert("Message sent successfully")
+    );
+  }
+</script>

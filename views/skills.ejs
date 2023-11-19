@@ -1,0 +1,117 @@
+<%- include("partials/header.ejs") %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        * {box-sizing:border-box}
+
+
+        .container {
+            width: 100%;
+            background-color: white;
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .html {width: 80%; background-color: #04AA6D;}
+        .C {width: 90%; background-color: #2196F3;}
+        .js {width: 85%; background-color: #f44336;}
+        .nodejs {width: 70%; background-color: #FF6C22;}
+        .expressjs {width: 80%; background-color: #F875AA;}
+        .solidity {width: 85%; background-color: #4D3C77;}
+        .motoko {width: 60%; background-color: #C683D7;}
+
+    </style>
+</head>
+<body>
+
+
+
+<section>
+
+
+    <p>C / C++</p>
+    <div class="container">
+        <div class="skills C">90%</div>
+    </div>
+
+    <p>HTML & CSS</p>
+    <div class="container">
+        <div class="skills html">80%</div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="container">
+        <div class="skills js">85%</div>
+    </div>
+
+    <p>Node JS</p>
+    <div class="container">
+        <div class="skills nodejs">70%</div>
+    </div>
+
+    <p>Express JS</p>
+    <div class="container">
+        <div class="skills expressjs">80%</div>
+    </div>
+
+    <p>Solidity</p>
+    <div class="container">
+        <div class="skills solidity">85%</div>
+    </div>
+
+    <p>Motoko</p>
+    <div class="container">
+        <div class="skills motoko">60%</div>
+    </div>
+
+</section>
+
+</body>
+</html>
