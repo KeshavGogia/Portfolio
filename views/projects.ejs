@@ -1,65 +1,97 @@
 <%- include("partials/header.ejs") %>
 
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
 
-    }
-
-    .project {
-        border: 1px solid #ddd;
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 15px;
-    }
-
-    a {
-        color: #0366d6;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-    .project:hover{
-        box-shadow: 5px 5px 5px 5px grey;
-    }
-</style>
-</head>
-<body>
-
-
-
-
-<div class="project">
-    <h2>Decentralised Tokens</h2>
-    <p>It is a D-App that is built using Motoko and it is maintains a DMT token and also perform some basic operations.</p>
-    <p><a href="https://github.com/KeshavGogia/DMT.git" target="_blank">GitHub Repository</a></p>
-</div>
-
-
-<div class="project">
-    <h2>QR Code Generator</h2>
-    <p>It takes in a URL and generates corresponding QR code for that. </p>
-    <p><a href="https://github.com/KeshavGogia/Qr-Code-Genrator.git" target="_blank">GitHub Repository</a></p>
-</div>
-
-
-<div class="project">
-    <h2>Task Manager</h2>
-    <p>It is a Task Manager that can add tasks and delete them on completion. </p>
-    <p><a href="https://github.com/KeshavGogia/Task-Manager.git" target="_blank">GitHub Repository</a></p>
-</div>
-
-
-
-
-
-</body>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+         body {
+             font-family: 'Arial', sans-serif;
+         }
+ 
+         .project {
+             border: 1px solid #ddd;
+             padding: 15px;
+             margin-bottom: 20px;
+             height: 300px;
+         }
+ 
+         h2 {
+             margin-bottom: 10px;
+         }
+ 
+         p {
+             margin-bottom: 15px;
+         }
+ 
+         a {
+             color: #0366d6;
+             text-decoration: none;
+         }
+ 
+         a:hover {
+             text-decoration: underline;
+         }
+ 
+         .project:hover {
+             box-shadow: 5px 5px 5px 5px grey;
+         }
+ 
+         /* 2x2 Structure */
+         .row {
+             display: flex;
+             flex-wrap: wrap;
+         }
+ 
+         .col {
+             flex: 1;
+             margin: 0 15px 0 0;
+         }
+        
+     </style>
+ </head>
+ <body>
+ 
+     <div  class="row">
+         <div   class="col">
+             <div  class="project">
+                
+                 <h2>Server Performance Manager</h2>
+                 <p>The Server Performance Management System aims to monitor and optimize server utilization to ensure efficient and reliable operation. The project focuses on real-time monitoring, analysis of server metrics, and automated actions to maintain optimal performance. </p>
+                 <p><a href="https://github.com/KeshavGogia/Square_root.git" target="_blank">GitHub Repository</a></p>
+             </div>
+         </div>
+ 
+         <div class="col">
+             <div class="project">
+                 <h2>Decentralised Tokens</h2>
+                 <p>It is a D-App that is built using Motoko and it is maintains a DMT token and also perform some basic operations.</p>
+                 <p><a href="https://github.com/KeshavGogia/DMT.git" target="_blank">GitHub Repository</a></p>
+             </div>
+         </div>
+     </div>
+ 
+     <div class="row">
+         <div class="col">
+             <div class="project">
+                 <h2>QR Code Generator</h2>
+                 <p>It takes in a URL and generates corresponding QR code for that. </p>
+                 <p><a href="https://github.com/KeshavGogia/Qr-Code-Genrator.git" target="_blank">GitHub Repository</a></p>
+             </div>
+         </div>
+ 
+         <div class="col">
+             <div class="project">
+                 <h2>Task Manager</h2>
+                 <p>It is a Task Manager that can add tasks and delete them on completion. </p>
+                 <p><a href="https://github.com/KeshavGogia/Task-Manager.git" target="_blank">GitHub Repository</a></p>
+             </div>
+         </div>
+     </div>
+ 
+ </body>
+ </html> 
+ 
+ 
