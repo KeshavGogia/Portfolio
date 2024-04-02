@@ -1,133 +1,149 @@
 <%- include("partials/header.ejs") %>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
 
-        .skills-section {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+    }
 
-        h2 {
-            color: #1a1a1a;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+    .skills-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-        .skill-category {
-            margin-top: 30px;
-        }
+    h2 {
+        color: #1a1a1a;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
 
-        h3 {
-            color: #4CAF50;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
+    .skill-category {
+        margin-top: 30px;
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+    h3 {
+        color: #3586ff;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
 
-        .op {
-            margin: 10px;
-            padding: 15px 20px;
-            background-color: #4CAF50;
-            color: #fff;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            font-size: 18px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            display: inline-block;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-        .op:hover {
-            background-color: #3586ff;
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
+    .op {
+        margin: 10px;
+        padding: 15px 20px;
+        background-color: #3586ff;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        display: inline-block;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-        
-    </style>
+    .op:hover {
+        background-color: green;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    
+</style>
 </head>
 
 <body>
 
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
 
-        <div class="skill-category">
-            <h3>Frontend Technologies</h3>
-            <ul>
-                <li class="op">HTML</li>
-                <li class="op">CSS</li>
-                <li class="op">JavaScript</li>
-            </ul>
-        </div>
+    <div class="skill-category">
+        <h3>Languages</h3>
+        <ul>
+            <li class="op">C++</li>
+            <li class="op">C</li>
+            <li class="op">Pyhton</li>
+            <li class="op">GoLang</li>
+            <li class="op">JavaScript</li>
+        </ul>
+    </div>
+    <div class="skill-category">
+        <h3>Frontend Technologies</h3>
+        <ul>
+            <li class="op">HTML</li>
+            <li class="op">CSS</li>
+            <li class="op">JavaScript</li>
+            <li class="op">React JS</li>
+        </ul>
+    </div>
 
-        <div class="skill-category">
-            <h3>Backend Technologies</h3>
-            <ul>
-                <li class="op">Node.js</li>
-                <li class="op">Express.js</li>
-            </ul>
-        </div>
+    <div class="skill-category">
+        <h3>Backend Technologies</h3>
+        <ul>
+            <li class="op">Node.js</li>
+            <li class="op">Express.js</li>
+        </ul>
+    </div>
 
-        <div class="skill-category">
-            <h3>Web3 Technologies</h3>
-            <ul>
-                <li class="op">Solidity</li>
-                <li class="op">Motoko</li>
-            </ul>
-        </div>
+    <div class="skill-category">
+        <h3>Web3 Technologies</h3>
+        <ul>
+            <li class="op">Solidity</li>
+            <li class="op">Motoko</li>
+        </ul>
+    </div>
 
-        <div class="skill-category">
-            <h3>Data Structures and Algorithms</h3>
-            <ul>
-                <li class="op">DSA</li>
-            </ul>
-        </div>
+    <div class="skill-category">
+        <h3>Data Structures and Algorithms</h3>
+        <ul>
+            <li class="op">DSA</li>
+        </ul>
+    </div>
 
-        <div class="skill-category">
-            <h3>DevOps Technologies</h3>
-            <ul>
-                <li class="op">Docker</li>
-                <li class="op">Kubernetes (K8s)</li>
-            </ul>
-        </div>
-    </section>
+    <div class="skill-category">
+        <h3>DevOps Technologies</h3>
+        <ul>
+            <li class="op">Docker</li>
+            <li class="op">Kubernetes (K8s)</li>
+            <li class="op">AWS </li>
+            <li class="op">Bash Scripting </li>
+            <li class="op">Terraform </li>
+            <li class="op">Jenkins </li>
+        </ul>
+    </div>
+</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const skills = document.querySelectorAll('.skills-section li');
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const skills = document.querySelectorAll('.skills-section li');
 
-            skills.forEach(skill => {
-                skill.addEventListener('mouseover', function () {
-                    this.style.transform = 'scale(1.1)';
-                });
+        skills.forEach(skill => {
+            skill.addEventListener('mouseover', function () {
+                this.style.transform = 'scale(1.1)';
+            });
 
-                skill.addEventListener('mouseout', function () {
-                    this.style.transform = 'scale(1)';
-                });
+            skill.addEventListener('mouseout', function () {
+                this.style.transform = 'scale(1)';
             });
         });
-    </script>
+    });
+</script>
 
 </body>
 
