@@ -1,97 +1,232 @@
-<%- include("partials/header.ejs") %>
+ <%- include("partials/header.ejs") %>
+
+  <div class="wrap">
+    <div class="tile"> 
+      <img src='https://images.unsplash.com/photo-1485848395967-65dff62dc35b?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+      <div class="text">
+      <h1>MediLink</h1>
+      <h2 class="animate-text">MERN</h2>
+
+      <p class="animate-text">It is a Hospital Management System which lets users book an appointment.</p>
+      <p class="animate-text"><a href="https://github.com/KeshavGogia/MediLink.git" target="_blank">GitHub Repository</a> </p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    
+    
+    <div class="tile"> 
+      <img src='https://images.unsplash.com/photo-1639066648921-82d4500abf1a?q=80&w=2624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+      <div class="text">
+      <h1>Enviu</h1>
+      <h2 class="animate-text">Node Express Solidity</h2>
+
+      <p class="animate-text">The Server Performance Management System aims to monitor and optimize server utilization to ensure efficient and reliable operation.</p>
+      <p class="animate-text"><a href="https://github.com/KeshavGogia/Square_root.git" target="_blank">GitHub Repository</a> </p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+      
+      <div class="tile"> 
+      <img src='https://plus.unsplash.com/premium_photo-1682145730713-34bba6d3d14a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+      <div class="text">
+      <h1>Screenshot Pipeline</h1>
+      <h2 class="animate-text">Node Express WebHooks</h2>
+
+      <p class="animate-text">This project captures screenshot as site updates, automatically updating the latest image in the README file.</p>
+      <p class="animate-text"><a href="https://github.com/KeshavGogia/screenshot-pipeline.git" target="_blank">GitHub Repository</a> </p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    </div>
+      <div class="tile"> 
+      <img src='https://images.unsplash.com/photo-1534723452862-4c874018d66d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+      <div class="text">
+      <h1>Store API</h1>
+      <h2 class="animate-text">Node Express MongoDB</h2>
+      <p class="animate-text">It is a project offering backend API services for e-commerce platforms. It enables functionalities such as product management, user authentication, order processing .</p>
+      <p class="animate-text"><a href="https://github.com/KeshavGogia/store-api.git" target="_blank">GitHub Repository</a> </p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    </div>
+      <div class="tile"> 
+      <img src=' https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'/>
+      <div class="text">
+      <h1>Image Resizer</h1>
+      <h2 class="animate-text">Node Express Electron</h2>
+      <p class="animate-text">A Desktop Image resizer app which helps in resizing image as per pixels.</p>
+      <p class="animate-text"><a href="https://github.com/KeshavGogia/image-resizer.git" target="_blank">GitHub Repository</a> </p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    </div>
+      
+      
+    </div>
+
+    <style>
+      body
+{
+  background-color:#eee
+}
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+.tile
+{
+  width:380px;
+  height:380px;
+  margin:10px;
+  background-color:#000000;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
 
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>
-         body {
-             font-family: 'Arial', sans-serif;
-         }
- 
-         .project {
-             border: 1px solid #ddd;
-             padding: 15px;
-             margin-bottom: 20px;
-             height: 300px;
-         }
- 
-         h2 {
-             margin-bottom: 10px;
-         }
- 
-         p {
-             margin-bottom: 15px;
-         }
- 
-         a {
-             color: #0366d6;
-             text-decoration: none;
-         }
- 
-         a:hover {
-             text-decoration: underline;
-         }
- 
-         .project:hover {
-             box-shadow: 5px 5px 5px 5px grey;
-         }
- 
-         /* 2x2 Structure */
-         .row {
-             display: flex;
-             flex-wrap: wrap;
-         }
- 
-         .col {
-             flex: 1;
-             margin: 0 15px 0 0;
-         }
-        
-     </style>
- </head>
- <body>
- 
-     <div  class="row">
-         <div   class="col">
-             <div  class="project">
-                
-                 <h2>Server Performance Manager</h2>
-                 <p>The Server Performance Management System aims to monitor and optimize server utilization to ensure efficient and reliable operation. The project focuses on real-time monitoring, analysis of server metrics, and automated actions to maintain optimal performance. </p>
-                 <p><a href="https://github.com/KeshavGogia/Square_root.git" target="_blank">GitHub Repository</a></p>
-             </div>
-         </div>
- 
-         <div class="col">
-             <div class="project">
-                 <h2>Decentralised Tokens</h2>
-                 <p>It is a D-App that is built using Motoko and it is maintains a DMT token and also perform some basic operations.</p>
-                 <p><a href="https://github.com/KeshavGogia/DMT.git" target="_blank">GitHub Repository</a></p>
-             </div>
-         </div>
-     </div>
- 
-     <div class="row">
-         <div class="col">
-             <div class="project">
-                 <h2>QR Code Generator</h2>
-                 <p>It takes in a URL and generates corresponding QR code for that. </p>
-                 <p><a href="https://github.com/KeshavGogia/Qr-Code-Genrator.git" target="_blank">GitHub Repository</a></p>
-             </div>
-         </div>
- 
-         <div class="col">
-             <div class="project">
-                 <h2>Task Manager</h2>
-                 <p>It is a Task Manager that can add tasks and delete them on completion. </p>
-                 <p><a href="https://github.com/KeshavGogia/Task-Manager.git" target="_blank">GitHub Repository</a></p>
-             </div>
-         </div>
-     </div>
- 
- </body>
- </html> 
- 
- 
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+    </style>
