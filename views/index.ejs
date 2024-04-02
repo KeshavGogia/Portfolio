@@ -1,12 +1,45 @@
 <%- include("partials/header.ejs") %>
 
 
-  <h1>Home Page</h1>
 
+<h1 data-value="KESHAV">KESHAV</h1>
   <p> <br>
-  Hi! I am<b><em> Keshav </em> </b> , an undergrad and a<strong> Web Devloper</strong>  
+   an undergrad and a <strong> Devloper</strong>  
   </p>
 
   
 
   <%- include("partials/footer.ejs") %>
+
+ 
+
+  <script>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.querySelector("h1").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
+}
+  </script>
