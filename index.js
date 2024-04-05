@@ -1,10 +1,14 @@
 import express from "express";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 8000;
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 app.get("/",(req,res)=>{
   res.render("index.ejs");
 });
@@ -26,4 +30,5 @@ app.get("/projects",(req,res)=>{
 })
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  console.log(`http://localhost:${port}`);
 });
