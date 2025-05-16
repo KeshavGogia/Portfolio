@@ -29,7 +29,7 @@ export async function sendEmail(formData: FormData) {
     // Email content
     const mailOptions = {
       from: validatedData.email,
-      to: process.env.EMAIL_USER, 
+      to: process.env.EMAIL_RECIEVER, 
       subject: `Portfolio Contact: Message from ${validatedData.name}`,
       text: validatedData.message,
       html: `
