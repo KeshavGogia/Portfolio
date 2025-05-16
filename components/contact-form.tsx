@@ -162,9 +162,7 @@ export function ContactForm() {
         </Button>
       </motion.div>
 
-      <motion.p variants={itemVariants} className="text-center text-sm text-muted-foreground">
-        Your message will be sent directly to keshav@gmail.com
-      </motion.p>
+     
     </motion.form>
   )
 }

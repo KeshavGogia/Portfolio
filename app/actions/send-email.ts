@@ -21,15 +21,15 @@ export async function sendEmail(formData: FormData) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER || "your-email@gmail.com", // Fallback for development
-        pass: process.env.EMAIL_PASSWORD || "your-app-password", // Fallback for development
+        user: process.env.EMAIL_USER || "your-email@gmail.com", 
+        pass: process.env.EMAIL_PASSWORD || "your-app-password", 
       },
     })
 
     // Email content
     const mailOptions = {
       from: validatedData.email,
-      to: "keshav@gmail.com", // Your email address
+      to: process.env.EMAIL_USER, 
       subject: `Portfolio Contact: Message from ${validatedData.name}`,
       text: validatedData.message,
       html: `

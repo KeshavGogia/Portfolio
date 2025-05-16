@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowDown, Github, Mail, Send } from "lucide-react"
+import { ArrowDown, Code, Github, Mail, Send } from "lucide-react"
 import { motion } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
@@ -172,15 +172,15 @@ export default function Home() {
                 </TextReveal>
                 <TextReveal delay={0.2}>
                   <p>
-                    With expertise in frontend and backend technologies, I enjoy the challenge of bringing ideas to life
+                    With expertise in backend development and Artificial Intelligence, I enjoy the challenge of bringing ideas to life
                     through clean code and thoughtful design. I believe in continuous learning and staying updated with
                     the latest industry trends.
                   </p>
                 </TextReveal>
                 <TextReveal delay={0.3}>
                   <p>
-                    When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                    projects, or enjoying the outdoors.
+                    When I’m not coding, you’ll find me playing sports, hitting the gym, or going for a run.
+I also love unwinding by listening to music in my free time.
                   </p>
                 </TextReveal>
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
                   viewport={{ once: true }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background flex items-center justify-center text-6xl font-bold text-primary/40">
-                    K
+                   Keshav
                   </div>
                 </motion.div>
               </div>
@@ -219,30 +219,30 @@ export default function Home() {
           </FadeIn>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
-              title="E-Commerce Platform"
-              description="A full-stack e-commerce solution with payment integration, user authentication, and inventory management."
-              tags={["Next.js", "TypeScript", "Stripe", "Tailwind"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
+              title="CrackLens"
+              description="It is an AI-powered tool that detects and quantifies surface cracks in infrastructure using advanced deep learning models. It leverages multiple segmentation architectures to deliver highly accurate and reliable crack analysis, helping improve structural health monitoring and maintenance."
+              tags={["Python", "Computer Vision"]}
+              imageUrl="/cracklens-cover.svg?height=400&width=600"
+              githubUrl="https://github.com/KeshavGogia/CrackLens"
+              liveUrl="https://github.com/KeshavGogia/CrackLens"
               index={0}
             />
             <ProjectCard
-              title="Task Management App"
-              description="A productivity application for managing tasks, projects, and team collaboration with real-time updates."
-              tags={["React", "Firebase", "Redux", "Material UI"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
+              title="SpeechIQ"
+              description="It is an AI-driven speaker intent recognition system leveraging Wav2Vec2 and deep learning to achieve 95.5% accuracy on real-world voice commands. Improved contextual understanding and robustness compared to traditional MFCC-based methods for enhanced speech interaction."
+              tags={["Python", "Wave2Vec2", "FastAPI", "Next.js","TypeScript"]}
+              imageUrl="/speech.svg?height=400&width=600"
+              githubUrl="https://github.com/KeshavGogia/SpeechIQ"
+              liveUrl="https://v0-next-js-dashboard-beta-ochre.vercel.app/"
               index={1}
             />
             <ProjectCard
-              title="Portfolio Website"
-              description="A responsive portfolio website showcasing projects and skills with a clean, minimalist design."
-              tags={["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]}
-              imageUrl="/placeholder.svg?height=400&width=600"
-              githubUrl="https://github.com"
-              liveUrl="https://example.com"
+              title="MediLink"
+              description="It is a MERN-based healthcare app that automates patient follow-ups and feedback, boosting engagement by 15%. Integrated AI-powered symptom analysis and streamlined appointment booking for efficient, personalized healthcare access."
+              tags={["Node.js", "JavaScript", "Tailwind CSS", "React.js","MongoDB","GeminiAI"]}
+              imageUrl="/medilink.svg?height=400&width=600"
+              githubUrl="https://github.com/KeshavGogia/MediLink"
+              liveUrl="https://medilinkai-e0lvjzt9p-keshavgogias-projects.vercel.app"
               index={2}
             />
           </div>
@@ -252,31 +252,44 @@ export default function Home() {
         <section id="resume" className="py-16 md:py-24">
           <div className="grid gap-10 md:grid-cols-2 md:gap-16">
             <FadeIn>
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
-                <p className="mt-4 text-muted-foreground">
-                  Download my resume to learn more about my experience, skills, and qualifications.
-                </p>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
+              <p className="mt-4 text-muted-foreground">
+                Download my resume to learn more about my experience, skills, and qualifications.
+              </p>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
+                <a href="https://drive.google.com/file/d/1kMRlqtuEvxh3LdtPQF4NVkEi14i4w88V/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <Button className="mt-6" size="lg">
                     Download Resume <ArrowDown className="ml-2 h-4 w-4" />
                   </Button>
-                </motion.div>
-              </div>
-            </FadeIn>
+                </a>
+              </motion.div>
+            </div>
+          </FadeIn>
+
             <div className="space-y-8">
               <FadeIn direction="left" delay={0.2}>
                 <div>
                   <h3 className="text-xl font-semibold">Skills</h3>
                   <StaggerContainer className="mt-4 flex flex-wrap gap-2">
                     {[
+                      "C",
+                      "C++",
+                      "HTML",
                       "JavaScript",
                       "TypeScript",
                       "React",
                       "Next.js",
                       "Node.js",
+                      "Express.js",
                       "Express",
                       "MongoDB",
+                      "MYSQL",
+                      "Numpy",
+                      "Librosa",
+                      "Scikit-learn",
+                      "Cuda",
+                      "Pandas",
                       "PostgreSQL",
                       "Tailwind CSS",
                       "Git",
@@ -304,16 +317,12 @@ export default function Home() {
                   <div className="mt-4 space-y-4">
                     <TextReveal delay={0.1}>
                       <div>
-                        <h4 className="font-medium">Bachelor of Science in Computer Science</h4>
-                        <p className="text-sm text-muted-foreground">University Name • 2018 - 2022</p>
+                        <h4 className="font-medium">Bachelor of Engineering in Computer Engineering</h4>
+                        <p className="text-sm text-muted-foreground">Thapar University  •  2022 - Present</p>
+                        <p className="text-sm text-muted-foreground">CGPA : 8.81</p>
                       </div>
                     </TextReveal>
-                    <TextReveal delay={0.2}>
-                      <div>
-                        <h4 className="font-medium">Web Development Bootcamp</h4>
-                        <p className="text-sm text-muted-foreground">Coding Academy • 2022</p>
-                      </div>
-                    </TextReveal>
+                  
                   </div>
                 </div>
               </FadeIn>
@@ -344,7 +353,7 @@ export default function Home() {
                       transition={{ duration: 0.2 }}
                     >
                       <Mail className="h-5 w-5 text-primary" />
-                      <span>keshav@gmail.com</span>
+                      <span>keshavgogia57@gmail.com</span>
                     </motion.div>
                     <motion.div
                       className="flex items-center gap-3"
@@ -352,15 +361,25 @@ export default function Home() {
                       transition={{ duration: 0.2 }}
                     >
                       <Github className="h-5 w-5 text-primary" />
-                      <a href="https://github.com/keshav" className="hover:underline">
-                        github.com/keshav
+                      <a href="https://github.com/KeshavGogia" className="hover:underline">
+                        github.com/KeshavGogia
+                      </a>
+                    </motion.div>
+                    <motion.div
+                      className="flex items-center gap-3"
+                      whileHover={{ x: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Code className="h-5 w-5 text-primary" />
+                      <a href="https://leetcode.com/keshav510" className="hover:underline">
+                        leetcode.com/keshav510
                       </a>
                     </motion.div>
                   </div>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">Location</h3>
-                  <p className="mt-2">City, Country</p>
+                  <p className="mt-2">Harayana, India</p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">Availability</h3>
@@ -379,13 +398,13 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
-              <Link href="https://github.com/keshav" className="text-muted-foreground hover:text-foreground">
+              <Link href="https://github.com/KeshavGogia" className="text-muted-foreground hover:text-foreground">
                 <span className="sr-only">GitHub</span>
                 <Github className="h-5 w-5" />
               </Link>
             </motion.div>
             <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
-              <Link href="mailto:keshav@gmail.com" className="text-muted-foreground hover:text-foreground">
+              <Link href="mailto:keshavgogia57@gmail.com" className="text-muted-foreground hover:text-foreground">
                 <span className="sr-only">Email</span>
                 <Mail className="h-5 w-5" />
               </Link>
